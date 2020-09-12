@@ -1,0 +1,5 @@
+file_name=c:\lalit\Bunds_JFMA.csv.gz
+keyspace_name=tick_data
+date_start=2018-01-01
+ip_address=10.131.70.123
+

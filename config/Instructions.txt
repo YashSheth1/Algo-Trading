@@ -1,0 +1,57 @@
+1. pip install cassandra-driver
+
+2. pip install csv
+
+3. pip install DateTime
+
+4. pip install ta-lib
+
+If error is there then follow next steps:
+
+-Download and Unzip ta-lib-0.4.0-msvc.zip
+-Move the Unzipped Folder ta-lib to C:\
+-Download and Install Visual Studio Community 2015
+-Remember to Select [Visual C++] Feature
+-Build TA-Lib Library
+-From Windows Start Menu, Start [VS2015 x64 Native Tools Command Prompt]
+-Move to C:\ta-lib\c\make\cdr\win32\msvc
+-Build the Library nmake
+
+
+
+------------------------open Cassandra and create a newKeyspace.
+
+4.CREATE KEYSPACE keyspace_name WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+
+------------------------NOW CREATE TABLES in cassandra
+
+-----------------------table DATA---------------------------------------
+
+create table data(xric varchar,date1 date,time1 time,number smallint,askprice float,bidprice float,bidsize int,asksize int,price float,volume int,type varchar,is_block boolean,primary key (xric,date1,time1,number)) with clustering order by (date1 ASC,time1 ASC,number ASC);
+
+
+----------------------table CANDLE---------------------------------
+
+create table candle1(candle_type varchar,open float,high float,low float,close float,xric varchar,date1 date,time_start time,time_end time,volume int,marketsell int,marketbuy int,limilsell int,limitbuy int,primary key (candle_type,xric,date1,time_start)) with clustering order by (xric ASC,date1 ASC,time_start ASC);
+
+
+----------------------table TRADES------------------------
+
+
+create table trades(run_no int,product varchar,side varchar,price float,size int,date1 date,time1 time,strategy varchar,type varchar,primary key (run_no,product,date1,time1));
+
+
+
+----open PYTHON and start running files
+
+5.CLEAN+UPLOAD.py file_name keyspace_name
+
+6.candle.py keyspace_name
+
+7.candle_Volume.py keyspace_name
+
+8.make sure Aggregration.py should be in the same folder
+
+9. Trading.py keyspace_name
+
+10. get_states.py keyspace_name

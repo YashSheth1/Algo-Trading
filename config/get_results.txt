@@ -1,0 +1,2 @@
+keyspace_name=try1
+ip_address=localhost

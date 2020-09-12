@@ -1,0 +1,5 @@
+start_date=2018-01-01
+end_date=2018-04-30
+xric=FGBLc1
+keyspace_name=tick_data
+ip_address=10.131.70.123

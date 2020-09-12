@@ -1,0 +1,3 @@
+keyspace_name=tick_data
+ip_address=10.131.70.123
+

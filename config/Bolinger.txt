@@ -1,0 +1,2 @@
+config_data@{'start_date':'2018-02-01','end_date':'2018-02-03','xric':'FGBLH8','keyspace_name':'try1','candle_type':'Time','data_timeperiod':'5','nbdevup':'2','nbdevdn':'2','matype':'0','choice':'1','order_type':'Market','lots':'1','ratio':'0.0','price':'0.0','ip_address':'localhost','bolinger':'5'}
+

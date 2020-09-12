@@ -1,0 +1,5 @@
+start_date=2018-02-01
+end_date=2018-02-02
+xric=FGBLH8
+keyspace_name=try1
+ip_address=localhost

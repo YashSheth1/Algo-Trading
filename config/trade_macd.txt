@@ -1,0 +1,11 @@
+Trade_main_config@{'start_date':'2018-02-01','end_date':'2018-02-05','xric':'FGBLH8','keyspace_name':'try1','candle_type':'Time','candle_size':'5','slow_time_period':'5','fast_time_period':'13','signal_time_period':'9','ip_address':'localhost'}
+volume_fast_ema@{'start_date':'2018-02-01','end_date':'2018-02-05','xric':'FGBLH8','keyspace_name':'try1','candle_type':'Time','data_timeperiod':'5','order_type':'Market','ip_address':'localhost','timeperiod_candle_volume':'5'}
+volume_slow_ema@{'start_date':'2018-02-01','end_date':'2018-02-05','xric':'FGBLH8','keyspace_name':'try1','candle_type':'Time','data_timeperiod':'5','order_type':'Market','ip_address':'localhost','timeperiod_candle_volume':'13'}
+
+
+
+
+
+
+
+
